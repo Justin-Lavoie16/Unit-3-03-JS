@@ -61,7 +61,7 @@
           height="25%"
         />
         <h2>Formulas</h2>
-              <h3>V=4/3πr³</h3>
+        <h3>V=4/3πr³</h3>
         <form action="#">
           <p>radius</p>
           <div class="mdl-textfield mdl-js-textfield">
@@ -69,22 +69,25 @@
               class="mdl-textfield__input"
               type="text"
               pattern="-?[0-9]*(\.[0-9]+)?"
-              id="radius-of-circle"/>
-            <label class="mdl-textfield__label" for="radius-of-circle">radius ...</label>
+              id="radius-of-circle"
+            />
+            <label class="mdl-textfield__label" for="radius-of-circle"
+              >radius ...</label
+            >
           </div>
         </form>
         <button
           class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-          onclick="calculate()">
+          onclick="calculate()"
+        >
           Calculate
         </button>
-        <br/>
-        <p>
-          <div id="answers">
-            <div id="volume"></div>
-          </div>
+        <br />
+        <p></p>
+        <div id="answers">
+          <div id="volume"></div>
+        </div>
       </main>
     </div>
   </body>
 </html>
-
