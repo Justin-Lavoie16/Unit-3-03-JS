@@ -4,13 +4,13 @@ if (navigator.serviceWorker) {
   })
 }
 
-'use strict'
+;("use strict")
 
-function calculate () {
+function calculate() {
+  const radius = parseInt(document.getElementById("radius-of-circle").value)
 
-  const radius = parseInt(document.getElementById('radius-of-circle').value)
+  const volume = (4 / 3) * Math.PI * radius ** 3
 
-  const volume = (4 / 3 * Math.PI * radius ** 3)
-
-    document.getElementById("volume").innerHTML = "<p>Volume is " + volume.toFixed(2) + " cm³</p>"
+  document.getElementById("volume").innerHTML =
+    "<p>Volume is " + volume.toFixed(2) + " cm³</p>"
 }
