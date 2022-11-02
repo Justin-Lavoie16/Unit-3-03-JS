@@ -10,9 +10,9 @@
     <title>GitHub page as PWA template</title>
     <link
       rel="canonical"
-      href="https://Justin-Lavoie16.github.io/ICS2O-PWA-Test/"
+      href="https://Justin-Lavoie16.github.io/Unit-3-03-JS/"
     />
-    <link rel="manifest" href="/ICS2O-PWA-Test/manifest.webmanifest" />
+    <link rel="manifest" href="/Unit-3-03-JS/manifest.webmanifest" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link
       rel="stylesheet"
@@ -49,63 +49,46 @@
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
       <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
-          <span class="mdl-layout-title">My first PWA</span>
+          <span class="mdl-layout-title">Area of a sphere</span>
         </div>
       </header>
       <main class="mdl-layout__content">
         <p></p>
         <img
-          src="./images/notebook-animation.svg"
+          src="./images/volume-sphere.svg"
           alt="Computer"
           width="25%"
           height="25%"
         />
         <h2>Formulas</h2>
-        <h3>pay = (hours x rate) x (1.00 - 0.18)</h3>
-        <h3>taxes = (hours x rate) x 0.18</h3>
+              <h3>V=4/3πr³</h3>
+            </th>
+          </tr>
+        </table>
         <form action="#">
-          <p>time worked for</p>
+          <p>radius</p>
           <div class="mdl-textfield mdl-js-textfield">
             <input
               class="mdl-textfield__input"
               type="text"
               pattern="-?[0-9]*(\.[0-9]+)?"
-              id="pay"
-            />
-            <label class="mdl-textfield__label" for="pay"
-              >number of hours worked ...</label
-            >
-            <span class="mdl-textfield__error">Input is not a number!</span>
-          </div>
-        </form>
-        <form action="#">
-          <p>hourly rate</p>
-          <div class="mdl-textfield mdl-js-textfield">
-            <input
-              class="mdl-textfield__input"
-              type="text"
-              pattern="-?[0-9]*(\.[0-9]+)?"
-              id="pay2"
-            />
-            <label class="mdl-textfield__label" for="pay2"
-              >hourly rate ...</label
-            >
-            <span class="mdl-textfield__error">Input is not a number!</span>
+              id="radius-of-circle"/>
+            <label class="mdl-textfield__label" for="radius-of-circle">radius ...</label>
           </div>
         </form>
         <button
           class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-          onclick="calculate()"
-        >
+          onclick="calculate()">
           Calculate
         </button>
-        <br />
-        <p></p>
-        <div id="answers">
-          <div id="area"></div>
-          <div id="perimeter"></div>
-        </div>
+        <br/>
+        <p>
+          <div id="answers">
+            <div id="volume"></div>
+          </div>
+        </p>
       </main>
     </div>
   </body>
 </html>
+
